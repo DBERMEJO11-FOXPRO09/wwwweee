@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #f4f4f9;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 100;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.4rem; /* Keep the font size */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: -110px; /* Keep the current alignment */
+    color: white; /* Text color */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+
+/* Navigation bar styling */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+header nav ul li a:hover {
+    color: #ffdc3c;
+}
+
+header nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffdc3c;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.section {
+    padding: 80px 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.section h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0 0 10px #ffdc3c, 0 0 20px #ffdc3c, 0 0 30px #ffdc3c; /* Golden glow effect */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* The Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Modal content (the image itself) */
+.modal-content {
+    max-width: 90%; /* Adjust max-width to control the image size */
+    max-height: 90%; /* Adjust max-height to control the image size */
+    object-fit: contain; /* Ensure the image maintains aspect ratio */
+}
+
+/* Close button */
+.close {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    opacity: 1;
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;  /* Allow the width to be auto and adjust naturally */
+    max-width: 100%;  /* Make sure it doesn't exceed the container width */
+    border: 8px solid #000; /* Thicker black border around the entire card */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    font-size: 1.9rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #ffdc3c, 0 0 20px #ffdc3c, 0 0 30px #ffdc3c; /* Golden glow effect */
+}
+
+/* Styling for the image container */
+.project-card .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /* Increased padding for a larger gap between the image and the border */
+    border: 8px solid #000; /* Thicker black border around the image container */
+    border-radius: 15px;
+    background-color: ghostwhite; /* Inside color of the border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;  /* Allow the container to take up the full available width */
+    max-width: none; /* Remove max-width to let it grow */
+}
+
+.project-card .project-image {
+    width: 70%; /* Increased the image width to make it larger */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Description styling */
+.project-card p {
+    font-size: 1em;
+    color: #f4f4f9;  /* Ensure the text is readable */
+    margin-bottom: 15px;
+    opacity: 1; /* Increased opacity for better visibility */
+    padding: 15px;  /* Padding for spacing inside the description */
+    border: 8px solid #000; /* Thicker black border around the description */
+    border-radius: 10px; /* Rounded corners for the description border */
+    background-color: #444; /* Slightly darker background for the description */
+}
+
+/* Hover effect for the image */
+.project-card .project-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Hidden Examples Content */
+.examples-content {
+    display: none;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Style for each image container */
+.examples-content .image-container {
+    text-align: center;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.examples-content .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.examples-content .image-container img:hover {
+    transform: scale(1.05);
+}
+
+.examples-content.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button, .btn-submit {
+    background: #00c6ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, .btn-submit:hover {
+    background: #0072ff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ul li a {
+    font-size: 1.2rem;
+    color: #00c6ff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+ul li a:hover {
+    transform: translateY(-5px);
+    color: #ffdc3c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #222;
+    color: #f4f4f9;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #00c6ff;
+    outline: none;
+}
+
+form button {
+    max-width: 200px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #f4f4f9;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+footer h1 {
+    font-size: 1.8rem;
+    margin: 15px 0 10px;
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+footer .leader, 
+footer .assistant-leader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between the role and name */
+    margin-top: 10px;
+}
+
+footer h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #ffdc3c;
+}
+
+footer strong {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+footer .members {
+    margin-top: 20px;
+}
+
+footer .members h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: #00c6ff;
+}
+
+footer .members ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .members ul li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #f4f4f9;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+.lesson-text {
+    margin-left: 100px;
+}

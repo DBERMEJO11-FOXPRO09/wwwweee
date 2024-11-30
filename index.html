@@ -4,232 +4,451 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathematics Portfolio</title>
-
-<style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1c1c1c;
-    color: #f4f4f9;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-header {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-    color: white;
-    padding: 30px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    position: relative;
-}
-
-header nav ul li a:hover {
-    color: #ffdc3c;
-}
-
-header nav ul li a::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ffdc3c;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-header nav ul li a:hover::before {
-    transform: scaleX(1);
-}
-
-.section {
-    padding: 80px 0;
-    animation: fadeIn 1.5s ease-out forwards;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2.8rem;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-.project-card {
-    background-color: #333;
-    padding: 25px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-    font-size: 1.9rem;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    font-size: 1.1rem;
-    color: #ddd;
-    margin-bottom: 20px;
-}
-
-button, .btn-submit {
-    background: #00c6ff;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover, .btn-submit:hover {
-    background: #0072ff;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-ul li a {
-    font-size: 1.2rem;
-    color: #00c6ff;
-    text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 50px;
-    transition: transform 0.3s ease;
-}
-
-ul li a:hover {
-    transform: translateY(-5px);
-    color: #ffdc3c;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 600px;
-    padding: 12px 18px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    background-color: #222;
-    color: #f4f4f9;
-    font-size: 1.1rem;
-    transition: border-color 0.3s ease;
-}
-
-form input:focus, form textarea:focus {
-    border-color: #00c6ff;
-    outline: none;
-}
-
-form button {
-    max-width: 200px;
-    font-size: 1.2rem;
-}
-
-footer {
-    background-color: #222;
-    text-align: center;
-    padding: 20px;
-    color: #bbb;
-}
-
-footer p {
-    font-size: 1.2rem;
-}
-
-/* Animation Effects */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.slide-in {
-    animation: slideIn 1.5s ease-out forwards;
-}
-
-</style>
-
+    <link rel="stylesheet" href="ptf.css">
 </head>
 <body>
-<!-- Your body content here remains unchanged -->
+    <header>
+        <div class="container">
+            <h1>Group 10 11-FOXPRO, 2ND QUARTER<br> PORTFOLIO IN GENERAL MATHEMATICS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <section id="home" class="section slide-in">
+    <div class="container">
+        <h2>2nd Quarter Portfolio in General Mathematics</h2>
+    </div>
+</section>
+
+<section id="about" class="section slide-in">
+    <div class="container">
+        <h2>About Our Portfolio in General Mathematics</h2>
+        <div id="about">
+            <p class="lesson-text">Below is the following lessons we discussed and learned during the 2nd Quarter in the subject of General Mathematics.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section slide-in">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Project 1: Advanced Calculus</h3>
+            <div class="image-container">
+                <img src="img1.jpg" alt="Project 1 Image" class="project-image" onclick="openModal(this.src)">
+            </div>
+            <br>
+            <p><strong>Definition of Exponential Function:</strong>
+
+- An Exponential function is defined by the formula f(x)=ax, where the input variable x occurs as an exponent. The expon- inve depends on the exponential entia curve on the valve X function and it depends on the value of x. <br><br>
+
+<strong>Characteristics of Exponential Function:</strong><br>
+
+-Domain is all real humbers<br>
+-Range is positive real numbers<br>
+-There are no x intercepts because there is no x value that you can put in the function to make there it = 0.<br>
+-The y intercept is always (0,1) because a°=1
+-The graph is always increasing
+- The x-axis (Where y=0) is a horizontal asymptote for X → - ∞<br><br></p>
+
+            <button class="btn-hover" onclick="toggleExamples('examples1')">View Examples</button>
+            <div id="examples1" class="examples-content" style="display: none;">
+                <div class="image-container">
+                    <img src="img2.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+                          
+                          <br><br><br>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Project 2: Algebraic Structures</h3>
+            <div class="image-container">
+                <img src="path-to-image-2.jpg" alt="Project 2 Image" class="project-image" onclick="openModal(this.src)">
+            </div>
+            <br>
+            <p>An exploration of groups, rings, and fields in abstract algebra.<br><br></p>
+            <button class="btn-hover" onclick="toggleExamples('examples2')">View Examples</button>
+            <div id="examples2" class="examples-content" style="display: none;">
+                <div class="image-container">
+                    <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+
+                     <br><br><br>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Project 3: Data Science in Mathematics</h3>
+            <div class="image-container">
+                <img src="path-to-image-3.jpg" alt="Project 3 Image" class="project-image" onclick="openModal(this.src)">
+            </div>
+            <br>
+            <p>How statistical analysis and machine learning intersect with pure mathematics.<br><br></p>
+            <button class="btn-hover" onclick="toggleExamples('examples3')">View Examples</button>
+            <div id="examples3" class="examples-content" style="display: none;">
+                <div class="image-container">
+                    <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+
+                    <br><br><br>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h3>Project 4: Mathematical Optimization</h3>
+            <div class="image-container">
+                <img src="path-to-image-4.jpg" alt="Project 4 Image" class="project-image" onclick="openModal(this.src)">
+            </div>
+            <br>
+            <p>Optimizing real-world problems using mathematical techniques.<br><br></p>
+            <button class="btn-hover" onclick="toggleExamples('examples4')">View Examples</button>
+            <div id="examples4" class="examples-content" style="display: none;">
+                <div class="image-container">
+                    <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+                       
+                       <br><br><br>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+            <h3>Project 5: Machine Learning Algorithms</h3>
+            <div class="image-container">
+                <img src="path-to-image-5.jpg" alt="Project 5 Image" class="project-image" onclick="openModal(this.src)">
+            </div>
+            <br>
+            <p>Exploring the fundamentals and applications of machine learning algorithms.<br><br></p>
+            <button class="btn-hover" onclick="toggleExamples('examples5')">View Examples</button>
+            <div id="examples5" class="examples-content" style="display: none;">
+                <div class="image-container">
+                    <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+                 <br><br><br>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+            <h3>Project 6: Cryptography</h3>
+            <div class="image-container">
+                <img src="path-to-image-6.jpg" alt="Project 6 Image" class="project-image" onclick="openModal(this.src)">
+            </div>
+            <br>
+            <p>Understanding encryption and decryption techniques in computer security.<br><br></p>
+            <button class="btn-hover" onclick="toggleExamples('examples6')">View Examples</button>
+            <div id="examples6" class="examples-content" style="display: none;">
+                <div class="image-container">
+                    <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+                </div>
+                <div class="image-container">
+                    <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+                    
+                    <br><br><br>
+
+             <!-- Project 7 -->
+<div class="project-card">
+    <h3>Project 7: Computational Geometry</h3>
+    <div class="image-container">
+        <img src="path-to-image-7.jpg" alt="Project 7 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>Exploring algorithms and data structures for geometric problems.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples7')">View Examples</button>
+    <div id="examples7" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Project 8 -->
+<div class="project-card">
+    <h3>Project 8: Network Theory</h3>
+    <div class="image-container">
+        <img src="path-to-image-8.jpg" alt="Project 8 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>Studying the analysis and design of network systems and structures.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples8')">View Examples</button>
+    <div id="examples8" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Project 9 -->
+<div class="project-card">
+    <h3>Project 9: Mathematical Logic</h3>
+    <div class="image-container">
+        <img src="path-to-image-9.jpg" alt="Project 9 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>Understanding the principles and applications of formal logic in mathematics.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples9')">View Examples</button>
+    <div id="examples9" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Project 10 -->
+<div class="project-card">
+    <h3>Project 10: Quantum Computing</h3>
+    <div class="image-container">
+        <img src="path-to-image-10.jpg" alt="Project 10 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>An introduction to quantum mechanics and its application in computing.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples10')">View Examples</button>
+    <div id="examples10" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Project 11 -->
+<div class="project-card">
+    <h3>Project 11: Artificial Intelligence</h3>
+    <div class="image-container">
+        <img src="path-to-image-11.jpg" alt="Project 11 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>Exploring the fundamentals of AI, machine learning, and deep learning.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples11')">View Examples</button>
+    <div id="examples11" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Project 12 -->
+<div class="project-card">
+    <h3>Project 12: Statistical Inference</h3>
+    <div class="image-container">
+        <img src="path-to-image-12.jpg" alt="Project 12 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>Understanding methods for making predictions and drawing conclusions from data.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples12')">View Examples</button>
+    <div id="examples12" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Project 13 -->
+<div class="project-card">
+    <h3>Project 13: Topology</h3>
+    <div class="image-container">
+        <img src="path-to-image-13.jpg" alt="Project 13 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>Exploring the study of topological spaces and continuity in mathematics.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples13')">View Examples</button>
+    <div id="examples13" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<!-- Project 14 -->
+<div class="project-card">
+    <h3>Project 14: Mathematical Modelling</h3>
+    <div class="image-container">
+        <img src="path-to-image-14.jpg" alt="Project 14 Image" class="project-image" onclick="openModal(this.src)">
+    </div>
+    <br>
+    <p>Modeling real-world phenomena using mathematical equations and simulations.<br><br></p>
+    <button class="btn-hover" onclick="toggleExamples('examples14')">View Examples</button>
+    <div id="examples14" class="examples-content" style="display: none;">
+        <div class="image-container">
+            <img src="example1.jpg" alt="Example 1" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example2.jpg" alt="Example 2" class="example-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-container">
+            <img src="example3.jpg" alt="Example 3" class="example-image" onclick="openModal(this.src)">
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+    </div>
+</section>
+
+
+<!-- Modal for Full Image View -->
+<div id="imageModal" class="modal" style="display: none;">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" class="modal-content" alt="Full View">
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2nd Quarter General Mathematics Portfolio</p>
+        <br>
+        <strong><h1>Group 10 Members:</h1></strong>
+        <div class="leader">
+            <h3>LEADER:</h3>
+            <strong>Dave Bermejo</strong>
+        </div>
+        <div class="assistant-leader">
+            <h3>ASSISTANT LEADER:</h3>
+            <strong>Gabrielle May Lazaro</strong>
+        </div>
+        <div class="members">
+            <h3>Members:</h3>
+            <ul>
+                <li>Member 1</li>
+                <li>Member 2</li>
+                <li>Member 3</li>
+                <li>Member 4</li>
+                <li>Member 5</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+// Toggle example content display
+function toggleExamples(exampleId) {
+    var examplesContent = document.getElementById(exampleId);
+    
+    if (examplesContent.style.display === "none" || examplesContent.style.display === "") {
+        examplesContent.style.display = "grid"; // Show the content
+    } else {
+        examplesContent.style.display = "none"; // Hide the content
+    }
+}
+
+// Open the modal when the image is clicked
+function openModal(imageSrc) {
+    var modal = document.getElementById("imageModal");
+    var modalImage = document.getElementById("modalImage");
+    modal.style.display = "flex"; // Show the modal
+    modalImage.src = imageSrc; // Set the source of the image in the modal
+}
+
+// Close the modal when the user clicks outside of the modal or on the close button
+function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none"; // Hide the modal
+}
+</script>
+
 </body>
 </html>
